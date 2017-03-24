@@ -1,0 +1,19 @@
+<div ng-controller = 'pollsController'>
+<h3>Current Polls</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Question</th>
+        <th>Date Posted</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat= 'poll in polls'>
+        <td ng-bind=poll.name ></td>
+        <td ng-bind=poll.question ></td>
+        <td ng-bind=poll.created_at ></td>
+        <td>BUTTON</td>
+      <tr>
+</div>

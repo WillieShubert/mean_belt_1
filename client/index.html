@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app = 'app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Polls</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+    <script src='./angular/angular.js'></script>
+    <script src='./angular-route/angular-route.js'></script>
+    <script src='./js/routes.js'></script>
+    <script src="./js/controllers/pollsControllers.js" charset="utf-8"></script>
+    <script src="./js/controllers/usersController.js" charset="utf-8"></script>
+    <script src="./js/pollsFactory.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Angular Polls Apps</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#!/dashboard">Current Polls</a></li>
+          <li><a href="#!/create">Create Poll</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div ng-view>
+
+    </div>
+  </body>
+</html>
